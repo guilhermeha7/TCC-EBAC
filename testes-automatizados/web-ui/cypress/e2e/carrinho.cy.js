@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
-import NavBarPage from '../pages/navBar.page'
+import NavBarPage from '../pages/nav-bar.page'
 import ProdutosPage from '../pages/produtos.page'
-import ProdutoEscolhidoPage from '../pages/produtoEscolhido.page'
+import ProdutoEscolhidoPage from '../pages/produto-escolhido'
 
 describe('Funcionalidade: Carrinho', () => {
 
