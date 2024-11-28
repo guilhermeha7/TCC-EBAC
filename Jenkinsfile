@@ -13,7 +13,7 @@ pipeline {
             steps {
                 dir('testes-automatizados/web-ui') {
                     // Executa os testes do primeiro projeto
-                    bat 'npx cypress run'
+                    bat 'set NO_COLOR=1 && npx cypress run'
                 }
             }
         }
@@ -29,7 +29,7 @@ pipeline {
             steps {
                 dir('testes-automatizados/api') {
                     // Executa os testes do segundo projeto
-                    bat 'npx cypress run'
+                    bat 'set NO_COLOR=1 && npx cypress run'
                 }
             }
         }
