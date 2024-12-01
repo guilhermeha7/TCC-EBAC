@@ -7,7 +7,7 @@
 
             Contexto: Dado que eu esteja na tela de login
 
-            Esquema do Cenário: Deve fazer login usando usuário e senha válidos
+            Esquema do Cenário: Deve fazer login com sucesso caso o usuário e a senha sejam válidos
             Quando o usuário inserir um <nomeUsuario> e uma <senha> válidos de uma conta ativa
             E clicar no botão "Login"
             Então o login deve ser bem-sucedido
