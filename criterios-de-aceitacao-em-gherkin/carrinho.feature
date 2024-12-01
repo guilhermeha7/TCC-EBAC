@@ -16,6 +16,11 @@ Dado que o valor do carrinho esteja maior que R$990,00
 Quando o usuário tentar adicionar mais produtos
 Então deve exibir uma mensagem de alerta
 
+Cenário: O usuário deve aplicar o cupom de 10% de desconto com sucesso caso o valor do carrinho estiver entre R$200,00 e R$600,00
+Dado que o valor do carrinho esteja entre R$200,00 e R$600,00
+Quando o usuário aplicar o cupom de 10% de desconto
+Então o usuário deve receber 10% de desconto na compra dos produtos
+
 Cenário: O usuário deve aplicar o cupom de 15% de desconto com sucesso caso o valor do carrinho estiver acima de R$600,00
 Dado que o valor do carrinho esteja maior que R$600,00
 Quando o usuário aplicar o cupom de 15% de desconto
