@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('criarCupom', (urlRequisicao, usuario, senha, prefixoCupom, porcentagemCupom) => {
+    cy.request({
+        method: 'POST',
+        url: urlRequisicao,
+        auth : {
+            username: usuario,
+            password: senha
+        },
+        body: {
+            "code": prefixoCupom+porcentagemCupom,
+            "amount": porcentagemCupom,
+            "discount_type": "fixed_product",
+            "description": `Cupom de desconto de ${porcentagemCupom}% de desconto`
+        }
+    })
+})

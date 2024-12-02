@@ -1,5 +1,5 @@
 /// <reference types="cypress"/>
-import ProdutoEscolhidoPage from '../pages/produto-escolhido'
+import ProdutoEscolhidoPage from '../support/pages/produto-escolhido.page'
 
 describe('Funcionalidade: Carrinho', () => {
   it('Deve adicionar 3 produtos ao carrinho', () => {

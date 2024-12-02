@@ -1,6 +1,6 @@
-import NavBarPage from '../pages/nav-bar.page'
-import ProdutosPage from '../pages/produtos.page'
-import ProdutoEscolhidoPage from '../pages/produto-escolhido'
+import NavBarPage from '../support/pages/nav-bar.page'
+import ProdutosPage from '../support/pages/produtos.page'
+import ProdutoEscolhidoPage from '../support/pages/produto-escolhido.page'
 
 Cypress.Commands.add('addProdutoAoCarrinho', (id, tamanho, cor, quantidade) => {
     NavBarPage.clicarEmComprar()
