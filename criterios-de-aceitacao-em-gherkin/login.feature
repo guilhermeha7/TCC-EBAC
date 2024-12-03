@@ -27,6 +27,6 @@
             | "teste@teste.com"             | "rewqerw"  | "Erro: A senha fornecida para o e-mail teste@teste.com está incorreta. Perdeu a senha?"                                                    |
             | "testeewrqrqwereqw@teste.com" | "teste123" | "Endereço de e-mail desconhecido. Verifique novamente ou tente seu nome de usuário."                                                       |
 
-            Cenário: Deve bloquear o login caso o usuário errar a senha 3 vezes
+            Cenário: Deve bloquear o login caso o usuário erre a senha 3 vezes
             Quando o usuário errar a senha 3 vezes
             Então o login deve ser bloqueado por 15 minutos

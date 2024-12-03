@@ -9,7 +9,7 @@ Contexto: Dado que eu esteja autenticado
 
 Cenário: Deve ser possível listar todos os cupons existentes
 Quando o admin enviar uma requisição GET para o endpoint "http://lojaebac.ebaconline.art.br/wp-json/wc/v3/coupons"
-Então deve ser listado todos os cupons existentes
+Então deve ser listado todos os cupons já criados
 
 Cenário: Deve ser possível listar um cupom especifico
 Quando o admin enviar uma requisição GET para o endpoint "http://lojaebac.ebaconline.art.br/wp-json/wc/v3/coupons/{id}"
