@@ -7,15 +7,15 @@ Para poder listar e cadastrar os cupons
 
 Contexto: Dado que eu esteja autenticado
 
-Cenário: Deve ser possível listar todos os cupons existentes
+Cenário: Listar todos os cupons criados
 Quando o admin enviar uma requisição GET para o endpoint "http://lojaebac.ebaconline.art.br/wp-json/wc/v3/coupons"
-Então deve ser listado todos os cupons já criados
+Então deve ser listado todos os cupons existentes
 
-Cenário: Deve ser possível listar um cupom especifico
+Cenário: Listar um cupom específico
 Quando o admin enviar uma requisição GET para o endpoint "http://lojaebac.ebaconline.art.br/wp-json/wc/v3/coupons/{id}"
-Então deve ser listado o cupom especificado
+Então deve ser listado o cupom do id especificado
 
-Cenário: Deve ser possível criar um novo cupom, desde o seu nome não tenha sido já criado
+Cenário: Criar um novo cupom
 Quando o admin enviar uma requisição POST para o endpoint "http://lojaebac.ebaconline.art.br/wp-json/wc/v3/coupons"
-E definir no seu body qual é o nome do cupom a ser criado
+E definir no body da requisição um nome para o cupom que não já exista
 Então o novo cupom deve ser criado
