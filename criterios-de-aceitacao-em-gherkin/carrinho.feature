@@ -7,7 +7,7 @@ Para realizar a compra dos itens
 
 Cenário: Não permitir adicionar mais de 10 unidades de um mesmo produto ao carrinho
 Dado que o usuário tenha clicado em um produto da loja
-Quando ele selecionar um tamanho, uma cor e 11 unidades do produto
+Quando ele selecionar um tamanho, uma cor e 11 unidades ou mais do produto
 E tentar adicioná-lo ao carrinho
 Então deve exibir uma mensagem de alerta
 
